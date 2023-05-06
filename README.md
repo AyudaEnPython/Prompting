@@ -17,6 +17,8 @@ Repositorio de `prompts` de la comunidad [Ayuda en Python](https://www.facebook.
 
 ## Guías
 
+Consulta el [glosario de términos](glosario.md), en él encontrarás definiciones para muchos de los términos relevantes en estas guías.
+
 - [Prompt Engineering - Introducción](guias/01-introduccion.md)
 
 
