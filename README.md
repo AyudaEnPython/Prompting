@@ -20,6 +20,7 @@ Repositorio de `prompts` de la comunidad [Ayuda en Python](https://www.facebook.
 Consulta el [glosario de términos](glosario.md), en él encontrarás definiciones para muchos de los términos relevantes en estas guías.
 
 - [Prompt Engineering - Introducción](guias/01-introduccion.md)
+- [Prompt Engineering - Pautas](guias/02-pautas.md)
 
 
 ---
@@ -33,8 +34,8 @@ Consulta el [glosario de términos](glosario.md), en él encontrarás definicion
 
 ## Herramientas
 
-- [CodeSeeker](https://leugimkm.github.io/codeseeker/)
-- [Code2Img](https://leugimkm.github.io/code2img/)
+- [openai](https://platform.openai.com/docs/api-reference?lang=python)
+- [python-dotenv](https://saurabh-kumar.com/python-dotenv/)
 
 ## Guía de Contribuciones
 
