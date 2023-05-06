@@ -69,4 +69,4 @@ experiencias relacionadas con este lenguaje de programación.
 
 ---
 
-[Siguiente](.03-iterativo.md)
+[Siguiente](03-iterativo.md)
