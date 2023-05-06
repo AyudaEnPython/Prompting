@@ -69,4 +69,8 @@ experiencias relacionadas con este lenguaje de programación.
 
 ---
 
-[Siguiente](03-iterativo.md)
+[<kbd> <br> Anterior <br> </kbd>][anterior]
+[<kbd> <br> Siguiente <br> </kbd>][siguiente]
+
+[anterior]: 01-introduccion.md
+[siguiente]: 03-iterativo.md

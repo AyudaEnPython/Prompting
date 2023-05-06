@@ -1,6 +1,7 @@
 # Introducción
 
-
 ---
 
-[Siguiente](02-pautas.md)
+[<kbd> <br> Siguiente <br> </kbd>][siguiente]
+
+[siguiente]: 02-pautas.md
