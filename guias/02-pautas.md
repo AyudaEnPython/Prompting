@@ -14,6 +14,10 @@ Bibliotecas necesarias:
 
 ### Principio 1: Escribir instrucciones claras y específicas
 
+Debes expresar lo que quieres que el modelo haga, entregando instrucciones tan claras y específicas como puedas. 
+
+No confundir escribir un "_prompt_ claro" con un "_prompt_ corto", porque en muchos casos _prompts_ mas largos en realidad brindan más claridad y contexto, conduciendo a resultados más detallados y relvantes.
+
 #### Táctica 1: Usar delimitadores para indicar claramente distintas partes de la entrada
 
 #### Táctica 2: Pedir una salida estructurada
