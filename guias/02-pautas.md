@@ -14,11 +14,31 @@ Bibliotecas necesarias:
 
 ### Principio 1: Escribir instrucciones claras y específicas
 
-Debes expresar lo que quieres que el modelo haga, entregando instrucciones tan claras y específicas como puedas. 
+Debes expresar lo que quieres que el modelo haga, proporcionando instrucciones tan claras y específicas como puedas. Esto guiará al modelo hacia la salida esperada y reducirá las posibilidades de recibir respuestas irrelevantes o incorrectas.
 
-No confundir escribir un "_prompt_ claro" con un "_prompt_ corto", porque en muchos casos _prompts_ mas largos en realidad brindan más claridad y contexto, conduciendo a resultados más detallados y relvantes.
+No confundir escribir un "_prompt_ claro" con un "_prompt_ corto". En muchos casos, _prompts_ mas largos en realidad brindan más claridad y contexto, conduciendo a resultados más detallados y relvantes.
 
 #### Táctica 1: Usar delimitadores para indicar claramente distintas partes de la entrada
+
+```python
+text = f"""
+AyudaEnPython es una comunidad dedicada a brindar apoyo \
+a cualquier problema sobre Python (principiante, intermedio \
+avanzado), compartir información, conocimientos y experiencias \
+relacionadas.
+"""
+
+prompt = f"""
+Resume el texto delimitado backticks triples
+```{text}```
+"""
+response = get_completion(prompt)
+print(response)
+```
+
+Output:
+
+    AyudaEnPython es una comunidad que ofrece ayuda y soporte en cualquier nivel de conocimiento sobre Python, además de compartir información y experiencias relacionadas con este lenguaje de programación.
 
 #### Táctica 2: Pedir una salida estructurada
 
