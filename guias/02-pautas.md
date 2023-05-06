@@ -9,8 +9,8 @@ Bibliotecas necesarias:
 
 ## Principios
 
-- Principio 1: Escribir instrucciones claras y específicas
-- Principio 2: Darle al modelo tiempo para "pensar"
+- [Principio 1](#principio-1-escribir-instrucciones-claras-y-específicas): Escribir instrucciones claras y específicas
+- [Principio 2](#principio-2-darle-al-modelo-timpo-para-pensar): Darle al modelo tiempo para "pensar"
 
 ### Principio 1: Escribir instrucciones claras y específicas
 
