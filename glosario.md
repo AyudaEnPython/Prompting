@@ -15,3 +15,6 @@
 - `Temperature`: Un parámetro utilizado en la generación de texto que controla la diversidad de las respuestas generadas por el modelo. Un valor alto de temperatura genera respuestas más diversas, mientras que un valor bajo de temperatura genera respuestas más conservadoras y predecibles.
 
 - `Token`: Una unidad de texto que se utiliza como entrada para un modelo de lenguaje. En el caso de _ChatGPT_, los tokens suelen ser palabras o subpalabras.
+
+---
+[Volver a Guías](README.md#guías)
