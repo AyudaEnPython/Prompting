@@ -11,7 +11,7 @@ Curso gratuito impartido por [DeepLearning.AI](https://learn.deeplearning.ai).
 
 ## Tabla de contenidos
 
-Consulta el [glosario de términos](../glosario.md), en él encontrarás definiciones para muchos de los términos relevantes.
+Consulta el [glosario de términos](../../glosario.md), en él encontrarás definiciones para muchos de los términos relevantes.
 
 - [Introducción](01-introduccion.md)
 - [Pautas](02-pautas.md)
