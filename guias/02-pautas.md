@@ -12,6 +12,8 @@ Bibliotecas necesarias:
 - [Principio 1](#principio-1-escribir-instrucciones-claras-y-específicas): Escribir instrucciones claras y específicas
 - [Principio 2](#principio-2-darle-al-modelo-timpo-para-pensar): Darle al modelo tiempo para "pensar"
 
+---
+
 ### Principio 1: Escribir instrucciones claras y específicas
 
 Debes expresar lo que quieres que el modelo haga, proporcionando instrucciones tan claras y específicas como puedas. Esto guiará al modelo hacia la salida esperada y reducirá las posibilidades de recibir respuestas irrelevantes o incorrectas.
@@ -57,8 +59,14 @@ experiencias relacionadas con este lenguaje de programación.
 
 #### Táctica 4: "Few-shot" prompting
 
+---
+
 ### Principio 2: Darle al modelo timpo para pensar
 
 #### Táctica 1: Especificar los pasos requeridos para completar una tarea
 
 #### Táctica 2: Instruir al modelo para que trabaje en su propia solución antes de precipitarse a una conclusión
+
+---
+
+[Siguiente](.03-iterativo.md)
