@@ -15,20 +15,19 @@
 
 Repositorio de `prompts` de la comunidad [Ayuda en Python](https://www.facebook.com/groups/ayudaenpython/).
 
+Consulta el [glosario de términos](glosario.md), en él encontrarás definiciones para muchos de los términos relevantes.
+
+---
+
+## Cursos
+
+- [ChatGPT Prompt Engineering for Developers](cursos/chatgpt-prompting-engineering/)
+
+---
+
 ## Guías
 
-Consulta el [glosario de términos](glosario.md), en él encontrarás definiciones para muchos de los términos relevantes en estas guías.
-
-- [Prompt Engineering - Introducción](guias/01-introduccion.md)
-- [Prompt Engineering - Pautas](guias/02-pautas.md)
-- [Prompt Engineering - Iterativo](guias/03-iterativo.md)
-- [Prompt Engineering - Resumir](guias/04-resumir.md)
-- [Prompt Engineering - Inferir](guias/05-inferir.md)
-- [Prompt Engineering - Transformar](guias/06-transformar.md)
-- [Prompt Engineering - Expandir](guias/07-expandir.md)
-- [Prompt Engineering - Chatbot](guias/08-chatbot.md)
-- [Prompt Engineering - Conclusion](guias/09-conclusion.md)
-
+> En progreso...
 
 ---
 

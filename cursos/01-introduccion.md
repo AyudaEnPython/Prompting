@@ -1,5 +1,6 @@
 # Introducción
 
+Como desarrollador, el poder de un LLM es usar llamadas API a LLM para crear rápidamente aplicaciones de software.
 ---
 
 [<kbd> <br> Inicio <br> </kbd>][inicio]

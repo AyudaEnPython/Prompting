@@ -17,4 +17,4 @@
 - `Token`: Una unidad de texto que se utiliza como entrada para un modelo de lenguaje. En el caso de _ChatGPT_, los tokens suelen ser palabras o subpalabras.
 
 ---
-[Volver a Guías](README.md#guías)
+[Volver a Guías](README.md#cursos)
