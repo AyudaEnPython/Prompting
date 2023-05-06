@@ -6,12 +6,12 @@
 ![Github last-commit](https://img.shields.io/github/last-commit/AyudaEnPython/prompting)
 ![maintenance](https://img.shields.io/maintenance/yes/2023)
 
-       ___                           _   _             
-      / _ \_ __ ___  _ __ ___  _ __ | |_(_)_ __   __ _ 
-     / /_)/ '__/ _ \| '_ ` _ \| '_ \| __| | '_ \ / _` |
-    / ___/| | | (_) | | | | | | |_) | |_| | | | | (_| |
-    \/    |_|  \___/|_| |_| |_| .__/ \__|_|_| |_|\__, |
-                              |_|                |___/ 
+        ____                             __  _            
+       / __ \_________  ____ ___  ____  / /_(_)___  ____ _
+      / /_/ / ___/ __ \/ __ `__ \/ __ \/ __/ / __ \/ __ `/
+     / ____/ /  / /_/ / / / / / / /_/ / /_/ / / / / /_/ / 
+    /_/   /_/   \____/_/ /_/ /_/ .___/\__/_/_/ /_/\__, /  
+                              /_/                /____/   
 
 Repositorio de `prompts` de la comunidad [Ayuda en Python](https://www.facebook.com/groups/ayudaenpython/).
 
