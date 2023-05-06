@@ -6,9 +6,9 @@
 
 [<kbd> <br> Anterior <br> </kbd>][Anterior]
 
-<br>
-
 [<kbd> <br> Inicio <br> </kbd>][Inicio]
+
+<br>
 
 [Anterior]: 08-chatbot.md
 [Inicio]: README.md
