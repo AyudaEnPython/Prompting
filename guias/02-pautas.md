@@ -20,6 +20,13 @@ No confundir escribir un "_prompt_ claro" con un "_prompt_ corto". En muchos cas
 
 #### Táctica 1: Usar delimitadores para indicar claramente distintas partes de la entrada
 
+Los delimitadores pueden ser:
+- Triple quotes: """
+- Triple backticks: ```
+- Triple dashes: ---
+- Angle brackets: <>
+- XML tags: `<tag> </tag>`
+
 ```python
 text = f"""
 AyudaEnPython es una comunidad dedicada a brindar apoyo \
@@ -38,7 +45,9 @@ print(response)
 
 Output:
 
-    AyudaEnPython es una comunidad que ofrece ayuda y soporte en cualquier nivel de conocimiento sobre Python, además de compartir información y experiencias relacionadas con este lenguaje de programación.
+```
+AyudaEnPython es una comunidad que ofrece ayuda y soporte en cualquier nivel de conocimiento sobre Python, además de compartir información y experiencias relacionadas con este lenguaje de programación.
+```
 
 #### Táctica 2: Pedir una salida estructurada
 
