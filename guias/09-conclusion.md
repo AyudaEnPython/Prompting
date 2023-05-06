@@ -2,8 +2,8 @@
 
 ---
 
-[<kbd> <br> Anterior <br> </kbd>][anterior]
-[<kbd> <br> Inicio <br> </kbd>][inicio]
+[<kbd> <br> Anterior <br> </kbd>][Anterior]
+[<kbd> <br> Inicio <br> </kbd>][Inicio]
 
-[anterior]: 08-chatbot.md
-[inicio]: README.md
+[Anterior]: 08-chatbot.md
+[Inicio]: README.md
