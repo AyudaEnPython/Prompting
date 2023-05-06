@@ -46,7 +46,9 @@ print(response)
 Output:
 
 ```
-AyudaEnPython es una comunidad que ofrece ayuda y soporte en cualquier nivel de conocimiento sobre Python, además de compartir información y experiencias relacionadas con este lenguaje de programación.
+AyudaEnPython es una comunidad que ofrece ayuda y soporte en cualquier
+nivel de conocimiento sobre Python, además de compartir información y
+experiencias relacionadas con este lenguaje de programación.
 ```
 
 #### Táctica 2: Pedir una salida estructurada
