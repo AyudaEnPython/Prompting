@@ -15,6 +15,13 @@
 
 Repositorio de `prompts` de la comunidad [Ayuda en Python](https://www.facebook.com/groups/ayudaenpython/).
 
+## Guías
+
+- [Prompt Engineering - Introducción](guias/01-introduccion.md)
+
+
+---
+
 ## Repositorios
 
 - [Soluciones](https://github.com/AyudaEnPython/Soluciones): Repositorio de soluciones
