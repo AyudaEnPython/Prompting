@@ -2,7 +2,7 @@
 
 ---
 
-[<kbd> <br> Siguiente <br> </kbd>][inicio]
+[<kbd> <br> Inicio <br> </kbd>][inicio]
 [<kbd> <br> Siguiente <br> </kbd>][siguiente]
 
 [inicio]: README.md
