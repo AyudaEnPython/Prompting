@@ -42,7 +42,7 @@ Basado en los artículos de internet, es muy probable que el _LLM base_ lo compl
 ¿Cuál es la moneda de Francia?
 ```
 
-### LLM afinado para instrucciones
+### LLM afinado para instrucciones (Instruction Tuned LLM)
 
 Entrenados para seguir instrucciones.
 
