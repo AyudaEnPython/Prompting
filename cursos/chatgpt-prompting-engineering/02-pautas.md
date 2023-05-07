@@ -240,6 +240,36 @@ Debido a las indicaciones previas que le dimos al modelo (que hacer si se cumpl�
 
 #### Táctica 4: "Few-shot" prompting
 
+Proveer ejemplos de ejecuciones exitosas de la tarea que se desea realizar antes de pedirle al modelo que los realice.
+
+```python
+prompt = f"""
+Tu tarea es responder en un estilo coherente.
+
+<niño>: Enséñame sobre la paciencia.
+
+<abuelo>: El río que talla el más profundo \
+valle fluye de un modesto manantial; \
+la sinfonía más grandiosa se origina de una sola nota; \
+el tapiz más intrincado comienza con un hilo solitario.
+
+<niño>: Enséñame sobre la resiliencia.
+"""
+response = get_completion(prompt)
+print(response)
+```
+
+```
+<abuelo>: La resiliencia es como un árbol que se dobla
+con el viento, pero no se quiebra. Es la capacidad de
+enfrentar los desafíos y superarlos, de encontrar la
+fuerza para seguir adelante incluso cuando las cosas
+parecen imposibles. La resiliencia se cultiva a través
+de la perseverancia y la determinación, y nos permite
+crecer y prosperar incluso en las circunstancias más
+difíciles.
+```
+
 ---
 
 ### Principio 2: Darle al modelo timpo para pensar
