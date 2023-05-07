@@ -6,6 +6,30 @@ Bibliotecas necesarias:
 - [openai](https://pypi.org/project/openai/)
 - [python-dotenv](https://pypi.org/project/python-dotenv/)
 
+Cargar la clave API y las bibliotecas:
+
+```python
+import openai
+import os
+
+from dotenv import load_dotenv, find_dotenv
+_ = load_dotenv(find_dotenv())
+
+openai.api_key  = os.getenv('OPENAI_API_KEY')
+```
+
+Función _helper_:
+
+```python
+def get_completion(prompt, model="gpt-3.5-turbo", temperature=0):
+    messages = [{"role": "user", "content": prompt}]
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=messages,
+        temperature=temperature,
+    )
+    return response.choices[0].message["content"]
+```
 
 ## Principios
 
@@ -54,6 +78,8 @@ experiencias relacionadas con este lenguaje de programación.
 ```
 
 #### Táctica 2: Pedir una salida estructurada
+- JSON
+- HTML
 
 #### Táctica 3: Pedir al modelo que revise si las condiciones fueron satisfactorias
 

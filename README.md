@@ -21,7 +21,7 @@ Consulta el [glosario de términos](glosario.md), en él encontrarás definicion
 
 ## Cursos
 
-- [ChatGPT Prompt Engineering for Developers](cursos/chatgpt-prompting-engineering/)
+- [ChatGPT Prompt Engineering for Developers | DeepLearning.AI](cursos/chatgpt-prompting-engineering/)
 
 ---
 
