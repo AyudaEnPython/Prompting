@@ -4,8 +4,8 @@ Curso gratuito impartido por [DeepLearning.AI](https://learn.deeplearning.ai).
 
 ## Instructores
 
-- Andrew Ng
-- Isa Fulford
+- Andrew Ng (Coursera, DeepLearning.AI)
+- Isa Fulford (OpenAI)
 
 ---
 

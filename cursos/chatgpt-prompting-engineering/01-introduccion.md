@@ -60,6 +60,14 @@ Un LLM afinado para instrucciones típicamente empieza como un LLM base que ha s
 
 ---
 
+Cuando se usa un _LLM afinado para instrucciones_, se debe pensar como darle instrucciones a otra persona que es inteligente pero que no conoce las especificaciones de la tarea.
+
+Cuando un _LLMs_ no funciona, algunas veces es porque las instrucciones no fueron lo suficientemente claras. Por ejemplo, si pidieras: "escribe algo sobre Alan Turing", además de eso, puede ser útil tener claro si se desea que el texto se centre en su trabajo científico, en su vida personal, en su papel en la historia o en otra cosa. Y si se especifíca el tono, ¿debería adoptar el tono que escribiría un periodista profesional? ¿O es más una nota casual que será enviada a un amigo?
+
+En las siguientes lecciones se verán ejemplos de como ser claro y específico, lo cual es un principio importante del _prompting_ y también sobre el segundo principio del _prompting_ que es darle al _LLM_ tiempo para pensar.
+
+---
+
 [<kbd> <br> Inicio <br> </kbd>][inicio]
 [<kbd> <br> Siguiente <br> </kbd>][siguiente]
 
