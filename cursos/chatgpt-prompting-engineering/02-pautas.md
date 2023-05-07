@@ -1,20 +1,43 @@
 # Pautas para Prompting
 
-## Setup
+## Configuración 
 
 Bibliotecas necesarias:
 - [openai](https://pypi.org/project/openai/)
-- [python-dotenv](https://pypi.org/project/python-dotenv/)
+- [python-dotenv](https://pypi.org/project/python-dotenv/) (opcional)
 
-Cargar la clave API y las bibliotecas:
+Para instalarlas, abrir un terminal escribir:
+```terminal
+> pip install openai
+```
 
+> _**NOTA**_: Si se trabaja con _notebooks_, anteponer `!`, por ejemplo `!pip install openai` 
+
+La biblioteca `openai` necesita se configurada con la clave secreta de tu cuenta, la cual esta disponible en su [página](https://platform.openai.com/account/api-keys)
+
+Se puede establecer como variable de entorno:
+
+```
+!export OPENAI_API_KEY='sk-...'
+```
+
+O, establecerla con su valor:
 ```python
 import openai
+
+openai.api_key = 'sk-...'
+```
+
+Para esta ultima forma, no es necesario `python_dotenv` (no recomendable).
+
+Importar las bibliotecas y cargar la clave API:
+```python
 import os
+import openai
 
 from dotenv import load_dotenv, find_dotenv
-_ = load_dotenv(find_dotenv())
 
+_ = load_dotenv(find_dotenv())
 openai.api_key  = os.getenv('OPENAI_API_KEY')
 ```
 
@@ -30,6 +53,10 @@ def get_completion(prompt, model="gpt-3.5-turbo", temperature=0):
     )
     return response.choices[0].message["content"]
 ```
+
+Para más información consultar la [documentación](https://platform.openai.com/docs/guides/chat) de `openai`.
+
+---
 
 ## Principios
 
@@ -80,6 +107,43 @@ experiencias relacionadas con este lenguaje de programación.
 #### Táctica 2: Pedir una salida estructurada
 - JSON
 - HTML
+
+```python
+prompt = f"""
+Generar una lista de tres títulos de libros inventados con \
+sus autores y géneros. \
+Proporcionarlos en formato JSON con las siguientes claves: book_id, \
+title, author, genre.
+"""
+response = get_completion(prompt)
+print(response)
+```
+
+Output:
+```
+{
+    "books": [
+        {
+            "book_id": 1,
+            "title": "El jardín de las mariposas",
+            "author": "Ana García",
+            "genre": "Drama"
+        },
+        {
+            "book_id": 2,
+            "title": "La ciudad de los sueños",
+            "author": "Carlos Pérez",
+            "genre": "Ciencia ficción"
+        },
+        {
+            "book_id": 3,
+            "title": "El secreto de la montaña",
+            "author": "María López",
+            "genre": "Misterio"
+        }
+    ]
+}
+```
 
 #### Táctica 3: Pedir al modelo que revise si las condiciones fueron satisfactorias
 
