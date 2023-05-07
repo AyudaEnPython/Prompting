@@ -10,15 +10,37 @@ Al finalizar el curso se espera que esto despierte la imaginación sobre las nue
 
 > _**NOTA**_: Varias partes de este repositorio han sido creadas usando AI, ¿Puedes adivinar cuáles?
 
-
 ## Tipos de LLMs
 
-- [LLM Base](#llm-base)
+- [LLM base](#llm-base)
 - [LLM afinado para instrucciones](#llm-afinado-para-instrucciones)
 
-### LLM Base
+### LLM base
 
 Entrenados para predecir la siguiente palabra en función de los datos de entrenamiento.
+
+Si por ejemplo, como _prompt_ ingresamos:
+```
+Había una vez un unicornio
+```
+
+Sería completado (prediciendo las siguientes palabras) de esta forma:
+```
+que vivía en un bosque mágico
+con todo sus amigos
+```
+
+Pero, si el _prompt_ fuése:
+```
+¿Cuál es la capital de Francia?
+```
+
+Basado en los artículos de internet, es muy probable que el _LLM base_ lo complete de esta forma:
+```
+¿Cuál es la ciudad más grande de Francia?
+¿Cuál es la población de Francia?
+¿Cuál es la moneda de Francia?
+```
 
 ### LLM afinado para instrucciones
 
