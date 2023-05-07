@@ -259,6 +259,7 @@ response = get_completion(prompt)
 print(response)
 ```
 
+Output:
 ```
 <abuelo>: La resiliencia es como un árbol que se dobla
 con el viento, pero no se quiebra. Es la capacidad de
@@ -277,6 +278,29 @@ difíciles.
 #### Táctica 1: Especificar los pasos requeridos para completar una tarea
 
 #### Táctica 2: Instruir al modelo para que trabaje en su propia solución antes de precipitarse a una conclusión
+
+---
+## Limitaciones del modelo: Alucinaciones
+
+Wikipedia es una enciclopedia libre, no un modelo de educación en línea
+```python
+prompt = f"""
+Cuéntame sobre las clases virtuales de Wikipedia
+"""
+response = get_completion(prompt)
+print(response)
+```
+
+Output:
+```
+Como modelo de educación en línea, Wikipedia ofrece una serie de clases virtuales gratuitas para aquellos interesados en aprender más sobre cómo editar y contribuir a la enciclopedia en línea. Estas clases son impartidas por voluntarios experimentados de Wikipedia y están diseñadas para ayudar a los nuevos editores a comprender los conceptos básicos de la edición de Wikipedia, así como a proporcionar información sobre cómo crear y mejorar artículos.
+
+Las clases virtuales de Wikipedia se llevan a cabo en línea a través de plataformas de videoconferencia como Zoom o Google Meet. Los participantes pueden unirse desde cualquier lugar del mundo y no se requiere experiencia previa en edición de Wikipedia para participar.
+
+Las clases cubren una variedad de temas, desde cómo crear una cuenta de Wikipedia hasta cómo agregar referencias y mejorar la calidad de los artículos existentes. También se ofrecen clases especializadas en temas como la edición de artículos científicos o la creación de artículos sobre temas de género y diversidad.
+
+En general, las clases virtuales de Wikipedia son una excelente manera para que los nuevos editores aprendan los conceptos básicos de la edición de Wikipedia y se unan a la comunidad de editores de Wikipedia.
+```
 
 ---
 
