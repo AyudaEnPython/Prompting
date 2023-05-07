@@ -46,6 +46,17 @@ Basado en los artículos de internet, es muy probable que el _LLM base_ lo compl
 
 Entrenados para seguir instrucciones.
 
+Si el _prompt_ fuése:
+```
+¿Cuál es la capital de Francia?
+```
+
+Es mucho más probable que sea completado de la siguiente forma:
+```
+La capital de Francia es París.
+```
+
+Un LLM afinado para instrucciones típicamente empieza como un LLM base que ha sido entrenado con una gran cantidad de datos y entrenado aún más para afinarlo con instrucciones e intentos para seguir esas instrucciones, siendo refinados a menudo con una técnica llamada _RLHF_ para hacer que el sistema sea capaz de ser útil y seguir las instrucciones.
 
 ---
 

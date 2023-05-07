@@ -12,6 +12,8 @@
 
 - `LLM`: Acrónimo de "_Large Language Model_" (Modelo lingüístico de gran tamaño). Hace referencia a modelos de lenguaje como _ChatGPT_ que utilizan redes neuronales de gran tamaño y técnicas de `DL` para procesar y generar texto.
 
+- `RLFH`: Acrónimo de "_Reinforcement Learning from Human Feedback_" (Aprendizaje reforzado a partir del feedback humano), es un enfoque de aprendizaje automático que utiliza retroalimentación humana para mejorar el rendimiento del aprendizaje por refuerzo. Permite al modelo aprender a través de la interacción continua con humanos, en lugar de confiar en una función de recompensa predefinida. Se utiliza en robótica, juegos y tareas de toma de decisiones. 
+
 - `NLP`: Acrónimo de "_Natural Language Processing_" (Procesamiento del lenguaje natural). Es una rama de la inteligencia artificial que se enfoca en la interacción entre los humanos y las computadoras mediante el lenguaje natural hablado o escrito. NLP se utiliza en una amplia variedad de aplicaciones, desde la traducción automática hasta la generación de texto y la comprensión de textos.
 
 - `Red neuronal`: Una red neuronal (_Neural network_) es un algoritmo de `ML` inspirado en la estructura del cerebro humano que utiliza capas de neuronas interconectadas para procesar información y realizar predicciones.
