@@ -275,7 +275,68 @@ difíciles.
 
 ### Principio 2: Darle al modelo timpo para pensar
 
+Si un modelo comete errores de razonamiento por apresurarse a llegar a una conclusión, se debe intentar reformular la consulta para solicitar una cadenda o serie de razonamientos relevantes antes de que el modelo proporcione su respuesta final.
+
+Otra forma de pensar en esto es que si se le asigna a un modelo una tarea que es demasiada compleja, para que la realice en un corto período de tiempo o en pocas palabras, lo más probable es que el modelo entregue un resultado incorrecto (lo mismo le sucedería a cualquier persona).
+
+En estas situaciones, podemos instruir al modelo a pensar más sobre el problema, en otras palabras, que dedique más esfuerzo computacional en la tarea.
+
 #### Táctica 1: Especificar los pasos requeridos para completar una tarea
+
+```python
+text = f"""
+In a charming village, siblings Jack and Jill set out on \ 
+a quest to fetch water from a hilltop \ 
+well. As they climbed, singing joyfully, misfortune \ 
+struck—Jack tripped on a stone and tumbled \ 
+down the hill, with Jill following suit. \ 
+Though slightly battered, the pair returned home to \ 
+comforting embraces. Despite the mishap, \ 
+their adventurous spirits remained undimmed, and they \ 
+continued exploring with delight.
+"""
+# ejemplo 1
+prompt_1 = f"""
+Realiza las siguientes acciones:
+1 - Resume el siguiente texto delimitado por backticks \
+triples en una oración en su idioma original.
+2 - Tradúce el resumen a español.
+3 - Listar cada nombre del resumen en español.
+4 - Devuelve un objeto json que contiene las siguientes \
+claves: resumen_spanish, n_nombres.
+
+Separa las respuestas con saltos de línea.
+
+
+Texto:
+```{text}```
+"""
+response = get_completion(prompt_1)
+print("Terminación del prompt 1:")
+print(response)
+```
+
+Output:
+```
+Terminación del prompt 1:
+1 - Siblings Jack and Jill go on a quest to fetch water, but
+misfortune strikes and they tumble down a hill before returning
+home undeterred.
+2 - Los hermanos Jack y Jill van en una búsqueda para traer
+agua, pero sufren un accidente y caen por una colina antes de
+regresar a casa sin desanimarse.
+3 - Jack, Jill.
+4 - {
+      "resumen_spanish": "Los hermanos Jack y Jill van en una
+      búsqueda para traer agua, pero sufren un accidente y
+      caen por una colina antes de regresar a casa sin
+      desanimarse.",
+      "n_nombres": 2
+   }
+```
+
+```
+```
 
 #### Táctica 2: Instruir al modelo para que trabaje en su propia solución antes de precipitarse a una conclusión
 
