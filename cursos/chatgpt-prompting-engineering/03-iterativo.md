@@ -1,4 +1,8 @@
-# Iterativo
+# Desarrollo Iterativo
+
+Siempre que se tenga un buen proceso para mejorar iterativamente un _prompt_, uno podrá llegar a algo que funcione bien para la tarea que se desea lograr.
+
+Además, es importante resaltar que lo que más importa es el proceso para llegar a _prompts_ que funcionan para la aplicación de uno.
 
 Proceso iterativo
 - Intentar algo
