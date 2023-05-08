@@ -295,7 +295,7 @@ comforting embraces. Despite the mishap, \
 their adventurous spirits remained undimmed, and they \ 
 continued exploring with delight.
 """
-# ejemplo 1
+
 prompt_1 = f"""
 Realiza las siguientes acciones:
 1 - Resume el siguiente texto delimitado por backticks \
@@ -306,7 +306,6 @@ triples en una oración en su idioma original.
 claves: resumen_spanish, n_nombres.
 
 Separa las respuestas con saltos de línea.
-
 
 Texto:
 ```{text}```
@@ -335,7 +334,45 @@ regresar a casa sin desanimarse.
    }
 ```
 
+Ahora usando el texto anterior, solicitamos la salida en un formato específico:
+```python
+prompt_2 = f"""
+Tu tarea es realizar las siguientes acciones:
+1 - Resumir en 1 oración el siguiente texto delimitado por <>.
+2 - Traducir el resumen a español.
+3 - Listar cada nombre del resumen en español
+4 - Devolver un objeto json con las claves: \
+resumen_spanish, n_nombres.
+
+Usa el siguiente formato:
+Texto: <texto a resumir>
+Resumen: <resumen>
+Traducción: <traducción del resumen>
+Nombres: <lista de nombres del resumen en español>
+JSON: <json con el resumen y n_nombres>
+
+Texto: <{text}>
+"""
+response = get_completion(prompt_2)
+print("\nTerminación para el prompt 2:")
+print(response)
 ```
+
+```
+Terminación para el prompt 2:
+Resumen: Jack y Jill van a buscar agua a un pozo en la 
+cima de una colina, pero sufren un accidente al caer
+por la colina, aunque regresan a casa ilesos y
+continúan explorando.
+Traducción: Jack y Jill van en busca de agua a un pozo
+en la cima de una colina, pero sufren un accidente al
+caer por la colina, aunque regresan a casa ilesos y
+continúan explorando.
+Nombres: Jack, Jill.
+JSON: {"resumen_spanish": "Jack y Jill van en busca de
+agua a un pozo en la cima de una colina, pero sufren un
+accidente al caer por la colina, aunque regresan a casa
+ilesos y continúan explorando.", "n_nombres": 2}
 ```
 
 #### Táctica 2: Instruir al modelo para que trabaje en su propia solución antes de precipitarse a una conclusión
