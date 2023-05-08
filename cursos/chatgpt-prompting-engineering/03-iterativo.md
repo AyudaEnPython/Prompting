@@ -10,6 +10,11 @@ Proceso iterativo
 - Clarificar las instrucciones, dar más tiempo para pensar
 - Refinar los _prompts_ con un lote de ejemplos
 
+> _**IMPORTANTE**_: No dar importancia a los artículos del tipo "30 prompts que debes aprender" porque probablemente no exista el prompt perfecto para todo. Es más importante que tengas un proceso para desarrollar un buen prompt para tu aplicación específica.
+
+### Generar una descripción de marketing de un producto a partir de una ficha técnica del mismo
+
+
 ---
 
 [<kbd> <br> Anterior <br> </kbd>][anterior]
