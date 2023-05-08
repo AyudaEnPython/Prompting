@@ -380,7 +380,8 @@ ilesos y continúan explorando.", "n_nombres": 2}
 ---
 ## Limitaciones del modelo: Alucinaciones
 
-Wikipedia es una enciclopedia libre, no un modelo de educación en línea
+Ten cuidado! a veces el modelo simplemente puede alucinar:
+- Wikipedia es una enciclopedia libre, no un modelo de educación en línea
 ```python
 prompt = f"""
 Cuéntame sobre las clases virtuales de Wikipedia
