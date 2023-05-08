@@ -377,6 +377,8 @@ ilesos y continúan explorando.", "n_nombres": 2}
 
 #### Táctica 2: Instruir al modelo para que trabaje en su propia solución antes de precipitarse a una conclusión
 
+A veces obtenemos mejores resultados cuando instruimos a los modelos explícitamente a razonar su propia solución antes de llegar a una conclusión.
+
 ---
 ## Limitaciones del modelo: Alucinaciones
 
