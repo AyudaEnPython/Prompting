@@ -14,6 +14,9 @@ Proceso iterativo
 
 ### Generar una descripción de marketing de un producto a partir de una ficha técnica del mismo
 
+---
+
+Para aplicaciones más sofisticadas, puede resultar útil evaluar los _prompts_ con un conjunto más grande de ejemplos, probar diferentes _prompts_ en docenas de fichas técnicas para ver el desempeño promedio o el peor en varias fichas técnicas. Por lo general terminarás haciendo esto solo cuando la aplicación es lo suficientemente madura y tengas las métricas necesarias para impulsar los últimos pasos incrementales de mejorar en el _prompt_.
 
 ---
 
