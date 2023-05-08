@@ -380,18 +380,127 @@ ilesos y continúan explorando.", "n_nombres": 2}
 A veces obtenemos mejores resultados cuando instruimos a los modelos explícitamente a razonar su propia solución antes de llegar a una conclusión.
 
 ```python
+prompt = f"""
+Determinar si la solución del estudiante es correcta o no.
 
+Pregunta:
+Estoy construyendo una instalación de energía solar y necesito \
+ayuda para resolver las finanzas.
+- El terreno cuesta $100 por pie cuadrado.
+- Puedo comprar paneles solares a $250 por pie cuadrado.
+- Negocié un contrato de mantenimiento que me costará planamente \
+$100k por año, y adicionalmente $10 por pie cuadrado.
+¿Cuál es el costo total para el primer año de operaciones en función \
+del número de pies cuadrados?
+
+Solución del estudiante:
+Sea x el tamaño de la instalación en pies cuadrados.
+Costos:
+1. Costo del terreno: 100x
+2. Costo de los paneles solares: 250x
+3. Costo de mantenimiento: 100,000 + 100x
+Costo total: 100x + 250x + 100,000 + 100x = 450x + 100,000
+"""
+response = get_completion(prompt)
+print(response)
 ```
 
+Output:
+```
+La solución del estudiante es correcta.
 ```
 
+Realmente la solución del estudiante **no es correcta**.
+
+Podemos arreglar esto instruyendo al modelo a encontrar su propia solución primero.
+
+~~~python
+prompt = f"""
+Tu tarea es determinar si la solución del estudiante es \
+correcta o no.
+Para resolver el problema haz lo siguiente:
+- Primero, elabora tu propia solución del problema.
+- Luego, compara tu solución con la solución del estudiante \
+y evalúa si la solución del estudiante es correcta o no.
+No decidas si la solución del estudiante es correcta hasta que \
+hayas terminado con el problema.
+
+Usa el siguiente formato:
+Pregunta:
 ```
+pregunta aquí
+```
+Solución del estudiante:
+```
+solución del estudiante aquí
+```
+Solución actual:
+```
+Pasos para encontrar la solución y tu solución aquí
+```
+Es la Solución del estudiante la misma que la solución actual \
+que acabas de resolver:
+```
+si o no
+```
+resultado:
+```
+correcto o incorrecto
+```
+
+Pregunta:
+'''
+Estoy construyendo una instalación de energía solar y necesito \
+ayuda para resolver las finanzas.
+- El terreno cuesta $100 por pie cuadrado.
+- Puedo comprar paneles solares a $250 por pie cuadrado.
+- Negocié un contrato de mantenimiento que me costará planamente \
+$100k por año, y adicionalmente $10 por pie cuadrado.
+¿Cuál es el costo total para el primer año de operaciones en función \
+del número de pies cuadrados?
+```
+Solución del estudiante:
+```
+Sea x el tamaño de la instalación en pies cuadrados.
+Costos:
+1. Costo del terreno: 100x
+2. Costo de los paneles solares: 250x
+3. Costo de mantenimiento: 100,000 + 100x
+Costo total: 100x + 250x + 100,000 + 100x = 450x + 100,000
+```
+Solución actual:
+"""
+response = get_completion(prompt)
+print(response)
+~~~
+
+Output:
+```
+Pasos para encontrar la solución:
+
+Sea x el tamaño de la instalación en pies cuadrados.
+
+1. Costo del terreno: 100x
+2. Costo de los paneles solares: 250x
+3. Costo de mantenimiento: 100,000 + 10x
+4. Costo total: 100x + 250x + 100,000 + 10x = 360x + 100,000
+
+La solución del estudiante es incorrecta.
+
+Resultado:
+Incorrecto.
+```
+
+Solicitar al modelo a realizar los cálculos por si mismo y separar la tarea en pasos le da más tiempo para pensar, y nos ayuda a obtener respuestas más precisas.
 
 ---
+
 ## Limitaciones del modelo: Alucinaciones
 
-Ten cuidado! a veces el modelo simplemente puede alucinar:
-- Wikipedia es una enciclopedia libre, no un modelo de educación en línea
+Si el modelo está expuesto a una gran cantidad de conocimiento durante el proceso de entrenamiento, no ha memorizado a la perfección la información que ve, por lo que no conce muy bien el límite de su conocimiento. Esto significa que podría tratar de responder preguntas sobre temas pocos claros y podría fabricar cosas que suenan pausibles pero que en realidad no son ciertas.
+
+A esas ideas fabricadas se les conoce como alucinaciones y pueden resultar algo peligrosas por lo realista que llegan a sonar. Por ejemplo, Wikipedia es una enciclopedia libre y no un modelo de educación en línea, pero: 
+
 ```python
 prompt = f"""
 Cuéntame sobre las clases virtuales de Wikipedia
@@ -427,6 +536,8 @@ manera para que los nuevos editores aprendan los conceptos básicos
 de la edición de Wikipedia y se unan a la comunidad de editores
 de Wikipedia.
 ```
+
+Ten en cuenta todo lo aprendido anteriormente para evitar esto.
 
 ---
 
