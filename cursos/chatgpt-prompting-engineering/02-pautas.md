@@ -379,6 +379,14 @@ ilesos y continúan explorando.", "n_nombres": 2}
 
 A veces obtenemos mejores resultados cuando instruimos a los modelos explícitamente a razonar su propia solución antes de llegar a una conclusión.
 
+```python
+
+```
+
+```
+
+```
+
 ---
 ## Limitaciones del modelo: Alucinaciones
 

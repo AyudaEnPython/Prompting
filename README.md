@@ -29,6 +29,10 @@ Consulta el [glosario de términos](glosario.md), en él encontrarás definicion
 
 > En progreso...
 
+## Apps
+
+> En progreso...
+
 ---
 
 ## Repositorios
