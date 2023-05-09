@@ -92,13 +92,13 @@ hacen que subir y bajar sea fácil. La silla está disponible
 con o sin reposabrazos y es adecuada para entornos domésticos
 o comerciales. Además, está cualificada para uso por contrato.
 Con una construcción de alta calidad, la carcasa está hecha de
-fundición de aluminio con recubrimiento de nylon PA6/PA66 modificado
-y un grosor de 10 mm. El asiento está hecho de espuma HD36 y
-viene con opciones de ruedas para piso blando o duro, dos opciones
-de densidades de espuma de asiento y reposabrazos sin brazos o de
-PU de 8 posiciones. Con dimensiones de 53 cm de ancho, 51 cm de 
-profundidad y 80 cm de altura, esta silla tiene una altura de
-asiento de 44 cm y una profundidad de asiento de 41 cm.
+fundición de aluminio con recubrimiento de nylon PA6/PA66
+modificado y un grosor de 10 mm. El asiento está hecho de espuma
+HD36 y viene con opciones de ruedas para piso blando o duro, dos
+opciones de densidades de espuma de asiento y reposabrazos sin
+brazos o de PU de 8 posiciones. Con dimensiones de 53 cm de ancho,
+51 cm de profundidad y 80 cm de altura, esta silla tiene una
+altura de asiento de 44 cm y una profundidad de asiento de 41 cm.
 Fabricada en Italia, esta silla es una adición elegante y
 funcional a cualquier espacio de oficina.
 ```
