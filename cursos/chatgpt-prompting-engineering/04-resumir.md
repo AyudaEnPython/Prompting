@@ -1,5 +1,11 @@
 # Resumir
 
+Hay demasiado texto en el mundo de hoy, casi ninguno de nosotros tiene suficiente tiempo para leer todas las cosas que desearíamos.
+
+Una de las aplicaciones más emocionantes de los _LLM_ es usarlos para resumir texto, algo que muchos equipos de desarrolladores construyen en múltiples aplicaciones de software. La interfaz web de _ChatGPT_ puede resumir artículos de modo que podamos leer el contenido de mucho más artículos de los que antes podíamos.
+
+Si estás creando un sitio web de comercio electrónico y hay un gran volumen de reseñas, tener una herramienta para resumir reseñas extensas podría darte una forma de revisar rápidamente más reseñas para tener una mejor idea de lo que todos tus clientes están pensando.
+
 ## Texto a resumir
 
 ```python
