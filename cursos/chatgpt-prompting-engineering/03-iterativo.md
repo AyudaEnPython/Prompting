@@ -200,7 +200,7 @@ recubrimiento de nylon PA6/PA66 modificado y el asiento
 está hecho de espuma HD36. Fabricado en Italia.
 ```
 
-También podemos solicitar cosas más especificaciones en el _prompt_:
+También podemos solicitar cosas más específicas en el _prompt_:
 
 ```python
 prompt = f"""
