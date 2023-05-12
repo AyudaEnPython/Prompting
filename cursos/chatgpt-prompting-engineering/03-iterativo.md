@@ -16,7 +16,7 @@ Si esto no funciona bien la primera vez, podemos refinar la idea, refinar el _pr
 
 > _**IMPORTANTE**_: No dar importancia a los artículos del tipo "30 prompts que debes aprender" porque probablemente no exista el prompt perfecto para todo. Es más importante que tengas un proceso para desarrollar un buen prompt.
 
-### Generar una descripción de marketing de un producto a partir de una ficha técnica del mismo
+## Generar una descripción de marketing de un producto a partir de una ficha técnica del mismo
 
 ```python
 fact_sheet_chair = """
@@ -103,6 +103,32 @@ Fabricada en Italia, esta silla es una adición elegante y
 funcional a cualquier espacio de oficina.
 ```
 
+## Problema 1: El texto es demasiado largo
+- Limitar el número de palabras/oraciones/caracteres.
+
+```python
+prompt = f"""
+Tu tarea es ayudar al equipo de marketing a crear
+una descripción para un sitio web minorista de un
+producto basado en una ficha técnica.
+
+Escribe una descripción del producto basada en la
+información proporcionada en las especificaciones
+técnicas delimitadas por backticks triples.
+
+Utiliza como máximo 50 palabras.
+
+Especificaciones técnicas: ```{fact_sheet_chair}```
+"""
+response = get_completion(prompt)
+print(response)
+```
+
+## Problema 2: El texto se enfoca en los detalles incorrectos
+- Solicitar que se centre en los aspectos que son relevantes para el público objetivo.
+
+## Problema 3: La descripción necesita una tabla de dimensiones
+- Solicitar que extraiga información y la organice en una tabla.
 ---
 
 Para aplicaciones más sofisticadas, puede resultar útil evaluar los _prompts_ con un conjunto más grande de ejemplos, probar diferentes _prompts_ en docenas de fichas técnicas para ver el desempeño promedio o el peor en varias fichas técnicas. Por lo general terminarás haciendo esto solo cuando la aplicación es lo suficientemente madura y tengas las métricas necesarias para impulsar los últimos pasos incrementales de mejorar en el _prompt_.
