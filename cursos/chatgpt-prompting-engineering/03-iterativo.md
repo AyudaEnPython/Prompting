@@ -317,7 +317,6 @@ Output:
 </table>
 ```
 
-
 Si estas usando un _notebook_, para visualizar el output:
 ```python
 from IPython.display import display, HTML
@@ -326,7 +325,6 @@ from IPython.display import display, HTML
 ```python
 display(HTML(response))
 ```
-
 
 ---
 
