@@ -124,6 +124,38 @@ response = get_completion(prompt)
 print(response)
 ```
 
+Output:
+```
+La silla de oficina de mediados de siglo es parte de una
+hermosa familia de muebles de oficina. Con varias opciones
+de color de carcasa y acabados de base, esta silla está
+disponible con o sin reposabrazos y es adecuada para
+entornos domésticos o comerciales. La silla está construida
+con una base de aluminio plastificado de 5 ruedas y un
+ajuste neumático del sillón para subir/bajar fácilmente.
+Disponible en 10 opciones de tela y 6 de cuero, esta silla
+es una excelente opción para cualquier espacio de trabajo.
+```
+
+Podemos verificar la cantidad de palabras con:
+```python
+len(response.split(" "))
+```
+
+Output:
+```
+88
+```
+
+No solo podemos limitar el número de palabras, también podemos hacerlo por oraciones o caracteres:
+
+```
+...
+Utiliza como máximo 4 oraciones.
+Utiliza como máximo 280 caracteres.
+...
+```
+
 ## Problema 2: El texto se enfoca en los detalles incorrectos
 - Solicitar que se centre en los aspectos que son relevantes para el público objetivo.
 
