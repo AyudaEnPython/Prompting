@@ -82,7 +82,7 @@ Output:
 contento, satisfecho, agradecido, impresionado, confiado
 ```
 
-## Identifica ira
+## Identificar ira
 
 
 ```python
@@ -132,7 +132,7 @@ Output:
 }   
 ```
 
-## Realizando múltiples tareas al mismo tiempo
+## Realizar múltiples tareas al mismo tiempo
 
 ```python
 prompt = f"""
@@ -201,7 +201,7 @@ la satisfacción laboral en todos los departamentos.
 """
 ```
 
-## Inferir 5 temas
+## Inferir cinco temas
 
 ```python
 prompt = f"""
