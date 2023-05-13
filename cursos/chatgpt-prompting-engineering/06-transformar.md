@@ -228,26 +228,22 @@ Para indicarle al _LLM_ corrija el texto, indicar al modelo que "revise" o "revi
 
 ```python
 text = [ 
-  "The girl with the black and white puppies have a ball.",
-  # The girl has a ball.
-  "Yolanda has her notebook.",
+  "La niña con los cachorros blancos y negros tienen una pelota.",
+  # La niña tiene una pelota.
+  "Yolanda tiene su libreta.",
   # ok
-  "Its going to be a long day. Does the car need it’s oil changed?",
-  # Homonyms
-  "Their goes my freedom. There going to bring they’re suitcases.",
-  # Homonyms
-  "Your going to need you’re notebook.",
-  # Homonyms
-  "That medicine effects my ability to sleep. Have you heard of the butterfly affect?",
-  # Homonyms
-  "This phrase is to cherck chatGPT for speling abilitty"
-  # spelling
+  "El barco emprendió un viaje asia el continente de Hacia.",
+  # Homónima
+  "Tu papel es muy vello, pero si sales así podrías cortarte el bello.",
+  # Homónima
+  "Esta fraze ez para berifikar la kapazidad de hortografia de chatGPT "
+  # ortografía
 ]
 for t in text:
-    prompt = f"""Proofread and correct the following text
-    and rewrite the corrected version. If you don't find
-    and errors, just say "No errors found". Don't use 
-    any punctuation around the text:
+    prompt = f"""Revisa y corrige el siguiente texto y 
+    reescribe la versión corregida. Si no encuentras
+    ningun error, solo di "No se encontraron errores". No
+    uses ninguna puntuación alrededor del texto:
     ```{t}```"""
     response = get_completion(prompt)
     print(response)
@@ -255,48 +251,45 @@ for t in text:
 
 Output:
 ```
-The girl with the black and white puppies has a ball.
-No errors found.
-It's going to be a long day. Does the car need its oil changed?
-Their goes my freedom. There going to bring they're suitcases.
-
-Corrected version: 
-There goes my freedom. They're going to bring their suitcases.
-You're going to need your notebook.
-That medicine affects my ability to sleep. Have you heard of the
-butterfly effect?
-This phrase is to check ChatGPT for spelling ability.
+La niña con los cachorros blancos y negros tiene una pelota.
+No se encontraron errores.
+El barco emprendió un viaje hacia el continente de Asia.
+Tu papel es muy bello, pero si sales así podrías cortarte el pelo.
+Esta frase es para verificar la capacidad de ortografía de ChatGPT.
 ```
 
 ```python
 text = f"""
-Got this for my daughter for her birthday cuz she keeps taking \
-mine from my room.  Yes, adults also like pandas too.  She takes \
-it everywhere with her, and it's super soft and cute.  One of the \
-ears is a bit lower than the other, and I don't think that was \
-designed to be asymmetrical. It's a bit small for what I paid for it \
-though. I think there might be other options that are bigger for \
-the same price.  It arrived a day earlier than expected, so I got \
-to play with it myself before I gave it to my daughter.
+Tengo esto para mi hija por el cumpleaños de mi hija pq sigue \
+tomando el mío de mi habitación.  Sí, a los adultos también \
+les gustan los pandas.  Ella lo lleva a todas partes, y es \
+super suave y lindo.  Una de las orejas está un poco más \
+baja que la otra, y no creo que fuera diseñado para ser \
+asimétrico. Es un poco pequeño para lo que pagué por el. \
+Creo que podrían haber otras opciones más grandes \
+por el mismo precio. LLegó un día antes de lo esperado, así \
+que pude jugar con él antes de dárselo a mi hija,
 """
-prompt = f"proofread and correct this review: ```{text}```"
+prompt = f"revisa y corrige esta reseña: ```{text}```"
 response = get_completion(prompt)
 print(response)
 ```
 
 Output:
 ```
-I got this for my daughter's birthday because she keeps taking mine
-from my room. Yes, adults also like pandas too. She takes it everywhere 
-with her, and it's super soft and cute. However, one of the ears is a
-bit lower than the other, and I don't think that was designed to be 
-asymmetrical. Additionally, it's a bit small for what I paid for it.
-I think there might be other options that are bigger for the same price. 
-On the positive side, it arrived a day earlier than expected, so I got
-to play with it myself before I gave it to my daughter.
+Tengo esto para mi hija por su cumpleaños, porque sigue tomando
+el mío de mi habitación. Sí, a los adultos también les gustan
+los pandas. Ella lo lleva a todas partes y es súper suave y lindo.
+Una de las orejas está un poco más baja que la otra, y no creo
+que haya sido diseñado para ser asimétrico. Es un poco pequeño
+para lo que pagué por él. Creo que podría haber otras opciones
+más grandes por el mismo precio. Llegó un día antes de lo
+esperado, así que pude jugar con él antes de dárselo a mi hija.
 ```
 
+Si estas usando un _notebook_:
 ```python
+from IPython.display import Markdown
 from redlines import Redlines
 
 diff = Redlines(text,response)
@@ -304,59 +297,48 @@ display(Markdown(diff.output_markdown))
 ```
 
 Output:
-```
-~~Got~~ I got this for my ~~daughter~~ for her daughter's birthday ~~cuz~~ 
-because she keeps taking mine from my ~~room.~~ room. Yes, adults also 
-like pandas ~~too.~~ too. She takes it everywhere with her, and it's super 
-soft and ~~cute. One~~ cute. However, one of the ears is a bit lower than
-the other, and I don't think that was designed to be asymmetrical.
-~~It's~~ Additionally, it's a bit small for what I paid for ~~it though.~~
-it. I think there might be other options that are bigger for the same
-~~price. It~~ price. On the positive side, it arrived a day earlier than
-expected, so I got to play with it myself before I gave it to my
-~~daughter.~~ daughter.
 
-```
+Tengo esto para mi hija por **~~el cumpleaños de mi hija pq~~ su cumpleaños,
+porque** sigue tomando el mío de mi **~~habitación.~~ habitación**. Sí, a los
+adultos también les gustan los **~~pandas. pandas.~~** Ella lo lleva a todas
+**~~partes,~~ partes** y es **~~super~~ súper** suave y **~~lindo.~~ lindo.**
+Una de las orejas está un poco más baja que la otra, y no creo que
+**~~fuera~~ haya** sido diseñado para ser asimétrico. Es un poco pequeño para
+lo que pagué por **~~el.~~ él.** Creo que **~~podrían~~ podría** haber otras
+opciones más grandes por el mismo precio. **~~LLegó~~ Llegó** un día antes de
+lo esperado, así que pude jugar con él antes de dárselo a mi **~~hija,~~ hija.**
 
 ```python
 prompt = f"""
-proofread and correct this review. Make it more compelling. 
-Ensure it follows APA style guide and targets an advanced reader. 
-Output in markdown format.
-Text: ```{text}```
+revisar y corregir esta reseña. Hazlo más convincente.
+Asegúrate que siga la guía de estilo APA y esté \
+dirigido a un lector avanzado.
+Salido de formato markdown.
+Texto: ```{text}```
 """
 response = get_completion(prompt)
 display(Markdown(response))
 ```
 
 ```
-Title: A Soft and Cute Panda Plushie for All Ages
+La elección de un regalo para el cumpleaños de mi hija fue fácil
+gracias a este adorable panda de peluche. Aunque es común pensar
+que los peluches son solo para niños, este panda ha demostrado
+ser un éxito entre adultos también. Su suavidad y ternura lo
+hacen irresistible para llevarlo a todas partes.
 
-As an adult, I can attest that pandas are not just for kids. That's
-why I got this adorable panda plushie for my daughter's birthday,
-after she kept taking mine from my room. And let me tell you, it
-was a hit!
+Sin embargo, debo mencionar que una de las orejas del panda está
+un poco más baja que la otra, lo que lo hace asimétrico. No creo
+que esto haya sido intencional en el diseño, pero no afecta su
+encanto. Además, el tamaño del peluche es un poco pequeño para
+el precio que pagué. Creo que podría haber opciones más grandes
+disponibles por el mismo precio.
 
-The plushie is super soft and cuddly, making it the perfect
-companion for my daughter. She takes it everywhere with her, and
-it has quickly become her favorite toy. However, I did notice that
-one of the ears is a bit lower than the other, which I don't think
-was designed to be asymmetrical. But that doesn't take away from
-its cuteness.
-
-The only downside is that it's a bit small for the price I paid.
-I think there might be other options that are bigger for the same
-price. But overall, I'm happy with my purchase.
-
-One thing that surprised me was that it arrived a day earlier than 
-expected. This gave me the chance to play with it myself before
-giving it to my daughter. And let me tell you, it's just as fun for
-adults as it is for kids.
-
-In conclusion, if you're looking for a soft and cute panda plushie
-that's perfect for all ages, this is definitely a great option.
-Just be aware that it might be a bit small for the price. But trust
-me, the cuteness factor makes up for it.
+A pesar de estos pequeños detalles, el panda llegó un día antes
+de lo esperado, lo que me permitió jugar con él antes de
+entregárselo a mi hija. En general, estoy satisfecho con mi
+compra y recomendaría este peluche a cualquier persona que busque
+un regalo lindo y suave para un ser querido.
 ```
 
 ---
