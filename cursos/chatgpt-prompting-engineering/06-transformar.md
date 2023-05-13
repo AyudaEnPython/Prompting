@@ -289,7 +289,6 @@ esperado, así que pude jugar con él antes de dárselo a mi hija.
 
 Si estas usando un _notebook_:
 ```python
-from IPython.display import Markdown
 from redlines import Redlines
 
 diff = Redlines(text,response)
