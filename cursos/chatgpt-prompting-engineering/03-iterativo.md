@@ -317,6 +317,44 @@ Output:
 </table>
 ```
 
+Vista HTML:
+
+<div>
+  <p>La silla de oficina SWC es parte de una hermosa familia de muebles de oficina inspirados en mediados de siglo. Esta silla está disponible en varias opciones de color de carcasa y acabados de base, lo que la hace perfecta para cualquier entorno doméstico o comercial. Además, la silla está disponible con o sin reposabrazos y es adecuada para uso por contrato.</p>
+  <p>La base de la silla está hecha de aluminio plastificado de 5 ruedas y cuenta con un ajuste neumático del sillón para subir/bajar fácilmente. El asiento está hecho de espuma HD36 y está disponible en dos opciones de densidades de espuma de asiento: medio (1,8 lb/ft3) o alto (2,8 lb/ft3). La silla también está disponible con respaldo de plástico y tapizado frontal (SWC-100) o tapizado completo (SWC-110) en 10 opciones de tela y 6 de cuero.</p>
+  <p>La silla SWC está construida con materiales de alta calidad. La carcasa está hecha de fundición de aluminio con recubrimiento de nylon PA6/PA66 modificado y tiene un grosor de 10 mm. La silla también está disponible con opciones de ruedas para piso blando o duro y reposabrazos sin brazos o de PU de 8 posiciones.</p>
+  <p>ID del producto: SWC-1001</p>
+</div>
+
+<table>
+  <caption>Dimensiones del producto</caption>
+  <tr>
+    <th>Dimensión</th>
+    <th>Medida</th>
+  </tr>
+  <tr>
+    <td>Ancho</td>
+    <td>53 cm | 20.87"</td>
+  </tr>
+  <tr>
+    <td>Profundidad</td>
+    <td>51 cm | 20.08"</td>
+  </tr>
+  <tr>
+    <td>Altura</td>
+    <td>80 cm | 31.50"</td>
+  </tr>
+  <tr>
+    <td>Altura del asiento</td>
+    <td>44 cm | 17,32"</td>
+  </tr>
+  <tr>
+    <td>Profundidad del asiento</td>
+    <td>41 cm | 16,14"</td>
+  </tr>
+</table>
+
+
 Si estas usando un _notebook_, para visualizar el output:
 ```python
 from IPython.display import display, HTML
