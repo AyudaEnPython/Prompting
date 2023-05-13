@@ -357,7 +357,6 @@ In conclusion, if you're looking for a soft and cute panda plushie
 that's perfect for all ages, this is definitely a great option.
 Just be aware that it might be a bit small for the price. But trust
 me, the cuteness factor makes up for it.
-
 ```
 
 ---
