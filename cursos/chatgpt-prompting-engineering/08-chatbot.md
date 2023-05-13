@@ -2,6 +2,31 @@
 
 Exploraremos como utilizar el formato de chat para extender las conversaciones con bots conversacionales (chatbots) personalizados o especializados para una tarea o comportamiento específico.
 
+## Configuración adicional
+
+Función _helper_:
+```python
+def get_completion_from_messages(
+        messages,
+        model="gpt-3.5-turbo",
+        temperature=0,
+):
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=messages,
+        temperature=temperature,
+    )
+    return response.choices[0].message["content"]
+```
+
+---
+
+Roles:
+- user: el usuario que interactúa con el modelo
+- assistant: el modelo
+- system: establece el comportamiento del modelo
+
+Si alguna vez has usado _ChatGPT_ (la interfaz web), entonces tus mensajes son los mensajes de **usuario** (`user`), los mensajes de _ChatGPT_ son los mensajes del **asistente** (`assistant`), y el **sistema** (`system`) ayuda a establecer el comportamiento y personalidad del asistente (actúa como una instrucción de alto nivel para la conversación). Por lo tanto, se puede considerar al sistema como un susurro al oído del asistente y una forma de guiar sus respuestas sin que el usuario se dé cuenta del mensaje del sistema.
 
 ```python
 messages =  [  
@@ -9,11 +34,13 @@ messages =  [
 {'role':'user', 'content':'Cuéntame un chiste'},   
 {'role':'assistant', 'content':'¿Por qué cruzó el pollo la carretera?'},   
 {'role':'user', 'content':'No lo sé'}  ]
-```
-
-```python
 response = get_completion_from_messages(messages, temperature=1)
 print(response)
+```
+
+Output:
+```
+Para llegar al otro lado, por supuesto. ¡Eso es lo que hacen los pollos!
 ```
 
 ```python
@@ -24,6 +51,10 @@ response = get_completion_from_messages(messages, temperature=1)
 print(response)
 ```
 
+Output:
+```
+¡Hola John! ¡Bienvenido! ¿En qué puedo ayudarte hoy?
+```
 
 ```python
 messages =  [  
@@ -33,15 +64,27 @@ response = get_completion_from_messages(messages, temperature=1)
 print(response)
 ```
 
+Output:
+```
+Lo siento, pero como soy un chatbot, no tengo la capacidad de
+recordar tu nombre, pero siempre puedes decírmelo y yo lo
+utilizaré en nuestra conversación. ¿Cómo te llamas?
+```
+
 ```python
 messages =  [  
 {'role':'system', 'content':'Eres un chatbot amigable.'},    
-{'role':'user', 'content':'Hola, mi nombre es John'}  ]
+{'role':'user', 'content':'Hola, mi nombre es John'},
 {'role':'assistant', 'content': "Hola John! Encantado de conocerte. \
 ¿Hay algo en lo que pueda ayudarte hoy?"},
 {'role':'user', 'content':'Si, ¿puedes recordarme cuál es mi nombre?'}  ]
 response = get_completion_from_messages(messages, temperature=1)
 print(response)
+```
+
+Output:
+```
+¡Por supuesto! Tu nombre es John, ¿estoy en lo cierto?
 ```
 
 ## Bot de órdenes
@@ -58,9 +101,9 @@ def collect_messages(_):
     response = get_completion_from_messages(context) 
     context.append({'role':'assistant', 'content':f"{response}"})
     panels.append(
-        pn.Row('User:', pn.pane.Markdown(prompt, width=600)))
+        pn.Row('Usuario:', pn.pane.Markdown(prompt, width=600)))
     panels.append(
-        pn.Row('Assistant:', pn.pane.Markdown(response, width=600, style={'background-color': '#F6F6F6'})))
+        pn.Row('Asistente:', pn.pane.Markdown(response, width=600, style={'background-color': '#F6F6F6'})))
     return pn.Column(*panels)
 ```
 
@@ -128,6 +171,8 @@ Los campos deben ser \
 response = get_completion_from_messages(messages, temperature=0)
 print(response)
 ```
+
+> _**NOTA**: revisa nuestros repositorios para la integración de un chatbot en CLI, GUI, WebApp.
 
 ---
 
