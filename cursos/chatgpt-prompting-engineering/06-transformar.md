@@ -70,16 +70,16 @@ Imagina que estás a cargo de IT en una gran empresa multinacional de comercio e
 
 ```python
 user_messages = [
-  # El rendimiento del sistema es más lento de lo normal
   "La performance du système est plus lente que d'habitude.", 
-  # Mi monitor tiene píxeles que no se iluminan
+  # El rendimiento del sistema es más lento de lo normal
   "My monitor has pixels that are not lighting",
-  # Mi ratón no está funcionando
+  # Mi monitor tiene píxeles que no se iluminan
   "Il mio mouse non funziona",
-  # Mi teclado tiene una tecla de control rota
+  # Mi ratón no está funcionando
   "Mój klawisz Ctrl jest zepsuty",
-  # Mi pantalla parpadea
+  # Mi teclado tiene una tecla de control rota
   "我的屏幕在闪烁",
+  # Mi pantalla parpadea
 ] 
 
 for issue in user_messages:
@@ -228,11 +228,10 @@ Para indicarle al _LLM_ corrija el texto, indicar al modelo que "revise" o "revi
 
 ```python
 text = [ 
-  # The girl has a ball.
   "The girl with the black and white puppies have a ball.",
-  # ok
+  # The girl has a ball.
   "Yolanda has her notebook.",
-  # Homonyms
+  # ok
   "Its going to be a long day. Does the car need it’s oil changed?",
   # Homonyms
   "Their goes my freedom. There going to bring they’re suitcases.",
@@ -240,8 +239,9 @@ text = [
   "Your going to need you’re notebook.",
   # Homonyms
   "That medicine effects my ability to sleep. Have you heard of the butterfly affect?",
-  # spelling
+  # Homonyms
   "This phrase is to cherck chatGPT for speling abilitty"
+  # spelling
 ]
 for t in text:
     prompt = f"""Proofread and correct the following text
