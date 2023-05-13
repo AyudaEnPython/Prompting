@@ -66,7 +66,7 @@ Informal: Do you wanna order a pillow?
 
 ## Traductor universal
 
-Imagina que estás a cargo de IT en una gran empresa multinacional de comercio electrónico. Los usuarios te envían mensajes con problemas relacionados a IT, todos en sus idiomas nativos. Tu personal es de todo el mundo y solo hablan sus idiomas nativos. !Necesitas un traductor universal!
+Imagina que estás a cargo del departamento de IT en una gran empresa multinacional de comercio electrónico. Los usuarios te envían mensajes con problemas relacionados a IT, todos en sus idiomas nativos. Tu personal es de todo el mundo y solo hablan sus idiomas nativos. !Necesitas un traductor universal!
 
 ```python
 user_messages = [
