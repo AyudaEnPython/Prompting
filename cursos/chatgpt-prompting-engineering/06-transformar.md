@@ -318,6 +318,48 @@ expected, so I got to play with it myself before I gave it to my
 
 ```
 
+```python
+prompt = f"""
+proofread and correct this review. Make it more compelling. 
+Ensure it follows APA style guide and targets an advanced reader. 
+Output in markdown format.
+Text: ```{text}```
+"""
+response = get_completion(prompt)
+display(Markdown(response))
+```
+
+```
+Title: A Soft and Cute Panda Plushie for All Ages
+
+As an adult, I can attest that pandas are not just for kids. That's
+why I got this adorable panda plushie for my daughter's birthday,
+after she kept taking mine from my room. And let me tell you, it
+was a hit!
+
+The plushie is super soft and cuddly, making it the perfect
+companion for my daughter. She takes it everywhere with her, and
+it has quickly become her favorite toy. However, I did notice that
+one of the ears is a bit lower than the other, which I don't think
+was designed to be asymmetrical. But that doesn't take away from
+its cuteness.
+
+The only downside is that it's a bit small for the price I paid.
+I think there might be other options that are bigger for the same
+price. But overall, I'm happy with my purchase.
+
+One thing that surprised me was that it arrived a day earlier than 
+expected. This gave me the chance to play with it myself before
+giving it to my daughter. And let me tell you, it's just as fun for
+adults as it is for kids.
+
+In conclusion, if you're looking for a soft and cute panda plushie
+that's perfect for all ages, this is definitely a great option.
+Just be aware that it might be a bit small for the price. But trust
+me, the cuteness factor makes up for it.
+
+```
+
 ---
 
 [<kbd> <br> Anterior <br> </kbd>][anterior]
