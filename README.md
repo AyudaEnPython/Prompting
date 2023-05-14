@@ -33,24 +33,20 @@ Consulta el [glosario de términos](glosario.md), en él encontrarás definicion
 
 > En progreso...
 
-## Apps
-
-> En progreso...
-
 ---
 
-## Repositorios
+## Bibliotecas de terceros
+
+- [openai](https://platform.openai.com/docs/api-reference?lang=python)
+- [python-dotenv](https://saurabh-kumar.com/python-dotenv/)
+- [panel](https://pypi.org/project/panel/)
+
+## Nuestros repositorios
 
 - [Soluciones](https://github.com/AyudaEnPython/Soluciones): Repositorio de soluciones
 - [Revisiones](https://github.com/AyudaEnPython/Revisiones): Repositorio de revisiones de código
 - [Retos](https://github.com/AyudaEnPython/Retos): Repositorio de retos
 - [Proyectos](https://github.com/AyudaEnPython/Proyectos): Repositorio de Proyectos
-
-## Herramientas
-
-- [openai](https://platform.openai.com/docs/api-reference?lang=python)
-- [python-dotenv](https://saurabh-kumar.com/python-dotenv/)
-- [panel](https://pypi.org/project/panel/)
 
 ## Guía de Contribuciones
 
