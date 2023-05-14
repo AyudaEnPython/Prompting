@@ -30,22 +30,6 @@ def get_completion_from_messages(
     return response.choices[0].message["content"]
 
 
-def collect_messages(_, user_input, context, panels, panel):
-    prompt = user_input.value_input
-    user_input.value = ''
-    context.append({'role':'user', 'content':f"{prompt}"})
-    response = get_completion_from_messages(context) 
-    context.append({'role':'assistant', 'content':f"{response}"})
-    panels.append(
-        panel.Row('Usuario:', panel.pane.Markdown(prompt, width=600)))
-    panels.append(
-        panel.Row('Asistente:', panel.pane.Markdown(
-            response, width=600,
-        )))
-    return panel.Column(*panels)
-
-
-
 def read_content(filename="content.txt"):
     with open(filename, "r", encoding="utf-8") as f:
         return f.read()
