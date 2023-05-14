@@ -50,6 +50,7 @@ Consulta el [glosario de términos](glosario.md), en él encontrarás definicion
 
 - [openai](https://platform.openai.com/docs/api-reference?lang=python)
 - [python-dotenv](https://saurabh-kumar.com/python-dotenv/)
+- [panel](https://pypi.org/project/panel/)
 
 ## Guía de Contribuciones
 
