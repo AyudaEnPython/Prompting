@@ -91,7 +91,7 @@ Output:
 
 Podemos automatizar la recopilación de los _prompts_ del usuario y las respuestas del asistente para crear un `OrderBot`. El `OrderBot` tomará pedidos en un restaurante de pizza.
 
-> _**NOTA**_: los siguientes códigos son para usarlos en un _notebook_, si no los usas puedes revisar nuestra alternativa [aquí](chatbot/README.md)
+> _**NOTA**_: los siguientes códigos son para usarlos en un _notebook_, si no los usas puedes revisar nuestra alternativa [aquí](../../apps/chatbot/)
 
 ```python
 def collect_messages(_):
