@@ -16,6 +16,7 @@
 Repositorio de `prompts` de la comunidad [Ayuda en Python](https://www.facebook.com/groups/ayudaenpython/).
 
 Consulta el [glosario de términos](glosario.md), en él encontrarás definiciones para muchos de los términos relevantes.
+También consula los [enlaces de interés](enlaces.md).
 
 ---
 
@@ -34,6 +35,10 @@ Consulta el [glosario de términos](glosario.md), en él encontrarás definicion
 > En progreso...
 
 ---
+
+## Enlaces de interés
+
+
 
 ## Bibliotecas de terceros
 
