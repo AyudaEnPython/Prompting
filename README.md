@@ -28,7 +28,8 @@ También consula los [enlaces de interés](enlaces.md).
 
 ## Apps
 
-- [ChatBot](apps/chatbot/)
+- [ChatBot (WebApp - panel)](apps/chatbot/)
+- [ChatGPT Wrapper (GUI - tkinter)](apps/tkinter_chatgpt_wrapper/)
 
 ## Guías
 
@@ -38,6 +39,7 @@ También consula los [enlaces de interés](enlaces.md).
 
 ## Enlaces de interés
 
+Listado de enlaces, separados por categoría y con una breve descripción, que pueden resultarte útiles, solo pulsa [aquí](enlaces.md).
 
 
 ## Bibliotecas de terceros
