@@ -13,7 +13,7 @@ A continuación presentamos un listado de enlaces que pueden resultarte interesa
 | Herramienta | Descripción | Enlace |
 |:-----------:|:-----------:|:------:|
 |ChatGPT (OpenAI)|Sistema de chat basado en _LLM_|[🔗](https://chat.openai.com/)|
-|Bard|Sistema de chat basado en _LaMDA_|[🔗](https://bard.google.com/)|
+|Bard (Google)|Sistema de chat basado en _LaMDA_|[🔗](https://bard.google.com/)|
 
 ## Arte & Creatividad
 
