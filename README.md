@@ -4,14 +4,14 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/AyudaEnPython/prompting)
 ![GitHub languages](https://img.shields.io/github/languages/top/AyudaEnPython/prompting)
 ![Github last-commit](https://img.shields.io/github/last-commit/AyudaEnPython/prompting)
-![maintenance](https://img.shields.io/maintenance/yes/2023)
+![maintenance](https://img.shields.io/maintenance/yes/2024)
 
-        ____                             __  _            
+        ____                             __  _
        / __ \_________  ____ ___  ____  / /_(_)___  ____ _
       / /_/ / ___/ __ \/ __ `__ \/ __ \/ __/ / __ \/ __ `/
-     / ____/ /  / /_/ / / / / / / /_/ / /_/ / / / / /_/ / 
-    /_/   /_/   \____/_/ /_/ /_/ .___/\__/_/_/ /_/\__, /  
-                              /_/                /____/   
+     / ____/ /  / /_/ / / / / / / /_/ / /_/ / / / / /_/ /
+    /_/   /_/   \____/_/ /_/ /_/ .___/\__/_/_/ /_/\__, /
+                              /_/                /____/
 
 Repositorio de `prompts` de la comunidad [Ayuda en Python](https://www.facebook.com/groups/ayudaenpython/).
 
@@ -40,7 +40,6 @@ También consula los [enlaces de interés](enlaces.md).
 ## Enlaces de interés
 
 Listado de enlaces, separados por categoría y con una breve descripción, que pueden resultarte útiles, solo pulsa [aquí](enlaces.md).
-
 
 ## Bibliotecas de terceros
 
