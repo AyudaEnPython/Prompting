@@ -20,4 +20,4 @@ A continuación presentamos un listado de enlaces que pueden resultarte interesa
 | Herramienta | Descripción | Enlace |
 |:-----------:|:-----------:|:------:|
 |Midjourney|Bot que permite generar imágenes con IA|[🔗](https://www.midjourney.com/)|
-|Stable Diffusion XL|IA Playground|[🔗](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/playground/models/sdxl)|
+|Stable Diffusion XL|IA Playground|[🔗](https://build.nvidia.com/stabilityai/stable-diffusion-xl)|
