@@ -24,6 +24,9 @@ También consula los [enlaces de interés](enlaces.md).
 
 - [ChatGPT Prompt Engineering for Developers | DeepLearning.AI](cursos/chatgpt-prompting-engineering/)
 
+> [!WARNING]
+> Algunas funcionalidades podrían estar obsoletas por actualizaciones recientes.
+
 ---
 
 ## Apps
@@ -41,6 +44,9 @@ También consula los [enlaces de interés](enlaces.md).
 ## Enlaces de interés
 
 Listado de enlaces, separados por categoría y con una breve descripción, que pueden resultarte útiles, solo pulsa [aquí](enlaces.md).
+
+> [!CAUTION]
+> Algunas applicaciones son de pago y se debe tomar en cuenta las consultas y el precio de las mismas. Otras ofrecen un número limitado de consultas por día.
 
 ## Bibliotecas de terceros
 
