@@ -4,7 +4,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/AyudaEnPython/prompting)
 ![GitHub languages](https://img.shields.io/github/languages/top/AyudaEnPython/prompting)
 ![Github last-commit](https://img.shields.io/github/last-commit/AyudaEnPython/prompting)
-![maintenance](https://img.shields.io/maintenance/yes/2024)
+![maintenance](https://img.shields.io/maintenance/yes/2025)
 
         ____                             __  _
        / __ \_________  ____ ___  ____  / /_(_)___  ____ _
