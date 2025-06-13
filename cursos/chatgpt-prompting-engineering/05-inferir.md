@@ -117,7 +117,7 @@ Formata tu respuesta como un objeto JSON con \
 Si la información no está presente, usa "desconocido" \
 como valor.
 Haz tu respuesta lo más breve posible.
-  
+
 Texto de reseña:'''{lamp_review}'''
 """
 response = get_completion(prompt)
@@ -129,7 +129,7 @@ Output:
 {
   "Artículo": "lámpara con almacenamiento adicional",
   "Marca": "Lumina"
-}   
+}
 ```
 
 ## Realizar múltiples tareas al mismo tiempo
@@ -244,7 +244,7 @@ Si queremos averiguar, dado un artículo de periódico, cuales de los siguientes
 
 ```python
 topics = [
-    "nasa", "gobierno local", "ingeniería", 
+    "nasa", "gobierno local", "ingeniería",
     "satisfacción de los empleados", "gobierno federal"
 ]
 ```

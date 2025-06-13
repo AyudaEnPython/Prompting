@@ -84,7 +84,7 @@ mucho que su experiencia con nuestro producto no haya sido
 satisfactoria. Nos disculpamos por cualquier inconveniente que
 esto haya causado.
 
-Nos gustaría asegurarnos de que nuestros clientes estén completamente 
+Nos gustaría asegurarnos de que nuestros clientes estén completamente
 satisfechos con nuestros productos y servicios. Si desea ponerse en
 contacto con nuestro servicio de atención al cliente, estaremos
 encantados de ayudarlo a resolver cualquier problema que pueda tener.
@@ -92,7 +92,7 @@ encantados de ayudarlo a resolver cualquier problema que pueda tener.
 Agradecemos sus comentarios sobre la calidad de nuestros productos
 y los tendremos en cuenta para mejorar en el futuro.
 
-Gracias de nuevo por su reseña y esperamos tener la oportunidad de 
+Gracias de nuevo por su reseña y esperamos tener la oportunidad de
 servirle mejor en el futuro.
 
 Atentamente,

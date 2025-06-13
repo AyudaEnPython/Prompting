@@ -1,6 +1,6 @@
 # Pautas para Prompting
 
-## Configuración 
+## Configuración
 
 Bibliotecas necesarias:
 - [openai](https://pypi.org/project/openai/)
@@ -11,7 +11,7 @@ Para instalarlas, abrir un terminal y escribir:
 > pip install openai
 ```
 
-> _**NOTA**_: Si se trabaja con _notebooks_, anteponer `!`, por ejemplo `!pip install openai` 
+> _**NOTA**_: Si se trabaja con _notebooks_, anteponer `!`, por ejemplo `!pip install openai`
 
 La biblioteca `openai` necesita se configurada con la clave secreta de tu cuenta, la cual esta disponible en su [página](https://platform.openai.com/account/api-keys)
 
@@ -285,14 +285,14 @@ En estas situaciones, podemos instruir al modelo a pensar más sobre el problema
 
 ```python
 text = f"""
-In a charming village, siblings Jack and Jill set out on \ 
-a quest to fetch water from a hilltop \ 
-well. As they climbed, singing joyfully, misfortune \ 
-struck—Jack tripped on a stone and tumbled \ 
-down the hill, with Jill following suit. \ 
-Though slightly battered, the pair returned home to \ 
-comforting embraces. Despite the mishap, \ 
-their adventurous spirits remained undimmed, and they \ 
+In a charming village, siblings Jack and Jill set out on \
+a quest to fetch water from a hilltop \
+well. As they climbed, singing joyfully, misfortune \
+struck—Jack tripped on a stone and tumbled \
+down the hill, with Jill following suit. \
+Though slightly battered, the pair returned home to \
+comforting embraces. Despite the mishap, \
+their adventurous spirits remained undimmed, and they \
 continued exploring with delight.
 """
 
@@ -360,7 +360,7 @@ print(response)
 
 ```
 Terminación para el prompt 2:
-Resumen: Jack y Jill van a buscar agua a un pozo en la 
+Resumen: Jack y Jill van a buscar agua a un pozo en la
 cima de una colina, pero sufren un accidente al caer
 por la colina, aunque regresan a casa ilesos y
 continúan explorando.
@@ -499,7 +499,7 @@ Solicitar al modelo a realizar los cálculos por si mismo y separar la tarea en 
 
 Si el modelo está expuesto a una gran cantidad de conocimiento durante el proceso de entrenamiento, no ha memorizado a la perfección la información que ve, por lo que no conce muy bien el límite de su conocimiento. Esto significa que podría tratar de responder preguntas sobre temas pocos claros y podría fabricar cosas que suenan pausibles pero que en realidad no son ciertas.
 
-A esas ideas fabricadas se les conoce como alucinaciones y pueden resultar algo peligrosas por lo realista que llegan a sonar. Por ejemplo, Wikipedia es una enciclopedia libre y no un modelo de educación en línea, pero: 
+A esas ideas fabricadas se les conoce como alucinaciones y pueden resultar algo peligrosas por lo realista que llegan a sonar. Por ejemplo, Wikipedia es una enciclopedia libre y no un modelo de educación en línea, pero:
 
 ```python
 prompt = f"""
@@ -515,19 +515,19 @@ Como modelo de educación en línea, Wikipedia ofrece una serie de
 clases virtuales gratuitas para aquellos interesados en aprender
 más sobre cómo editar y contribuir a la enciclopedia en línea.
 Estas clases son impartidas por voluntarios experimentados de
-Wikipedia y están diseñadas para ayudar a los nuevos editores a 
+Wikipedia y están diseñadas para ayudar a los nuevos editores a
 comprender los conceptos básicos de la edición de Wikipedia, así
 como a proporcionar información sobre cómo crear y mejorar artículos.
 
 Las clases virtuales de Wikipedia se llevan a cabo en línea a
 través de plataformas de videoconferencia como Zoom o Google Meet.
 Los participantes pueden unirse desde cualquier lugar del mundo y
-no se requiere experiencia previa en edición de Wikipedia para 
+no se requiere experiencia previa en edición de Wikipedia para
 participar.
 
 Las clases cubren una variedad de temas, desde cómo crear una
 cuenta de Wikipedia hasta cómo agregar referencias y mejorar la
-calidad de los artículos existentes. También se ofrecen clases 
+calidad de los artículos existentes. También se ofrecen clases
 especializadas en temas como la edición de artículos científicos
 o la creación de artículos sobre temas de género y diversidad.
 

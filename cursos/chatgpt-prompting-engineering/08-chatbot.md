@@ -29,10 +29,10 @@ Roles:
 Si alguna vez has usado _ChatGPT_ (la interfaz web), entonces tus mensajes son los mensajes de **usuario** (`user`), los mensajes de _ChatGPT_ son los mensajes del **asistente** (`assistant`), y el **sistema** (`system`) ayuda a establecer el comportamiento y personalidad del asistente (actúa como una instrucción de alto nivel para la conversación). Por lo tanto, se puede considerar al sistema como un susurro al oído del asistente y una forma de guiar sus respuestas sin que el usuario se dé cuenta del mensaje del sistema.
 
 ```python
-messages =  [  
-{'role':'system', 'content':'Eres un asistente que habla como Shakespeare.'},    
-{'role':'user', 'content':'Cuéntame un chiste'},   
-{'role':'assistant', 'content':'¿Por qué cruzó el pollo la carretera?'},   
+messages =  [
+{'role':'system', 'content':'Eres un asistente que habla como Shakespeare.'},
+{'role':'user', 'content':'Cuéntame un chiste'},
+{'role':'assistant', 'content':'¿Por qué cruzó el pollo la carretera?'},
 {'role':'user', 'content':'No lo sé'}  ]
 response = get_completion_from_messages(messages, temperature=1)
 print(response)
@@ -44,8 +44,8 @@ Para llegar al otro lado, por supuesto. ¡Eso es lo que hacen los pollos!
 ```
 
 ```python
-messages =  [  
-{'role':'system', 'content':'Eres un chatbot amigable.'},    
+messages =  [
+{'role':'system', 'content':'Eres un chatbot amigable.'},
 {'role':'user', 'content':'Hola, mi nombre es John'}  ]
 response = get_completion_from_messages(messages, temperature=1)
 print(response)
@@ -57,8 +57,8 @@ Output:
 ```
 
 ```python
-messages =  [  
-{'role':'system', 'content':'Eres un chatbot amigable.'},    
+messages =  [
+{'role':'system', 'content':'Eres un chatbot amigable.'},
 {'role':'user', 'content':'Si, ¿puedes recordarme cuál es mi nombre?'}  ]
 response = get_completion_from_messages(messages, temperature=1)
 print(response)
@@ -72,8 +72,8 @@ utilizaré en nuestra conversación. ¿Cómo te llamas?
 ```
 
 ```python
-messages =  [  
-{'role':'system', 'content':'Eres un chatbot amigable.'},    
+messages =  [
+{'role':'system', 'content':'Eres un chatbot amigable.'},
 {'role':'user', 'content':'Hola, mi nombre es John'},
 {'role':'assistant', 'content': "Hola John! Encantado de conocerte. \
 ¿Hay algo en lo que pueda ayudarte hoy?"},
@@ -98,7 +98,7 @@ def collect_messages(_):
     prompt = inp.value_input
     inp.value = ''
     context.append({'role':'user', 'content':f"{prompt}"})
-    response = get_completion_from_messages(context) 
+    response = get_completion_from_messages(context)
     context.append({'role':'assistant', 'content':f"{response}"})
     panels.append(
         pn.Row('Usuario:', pn.pane.Markdown(prompt, width=600)))
@@ -111,7 +111,7 @@ def collect_messages(_):
 import panel as pn
 
 pn.extension()
-panels = [] 
+panels = []
 
 context = [ {'role':'system', 'content':"""
 Eres OrderBot, un servicio automatizado para recolectar ordenes para \
@@ -119,7 +119,7 @@ una pizzería.
 Primero saludas al cliente, luego recolectas el pedido, \
 y luego preguntas si se trata de recoger el pedido o llevarlo.
 Espera hasta recolectar todo el pedido, luego resúmelo y comprueba por \
-última vez si el cliente quiere añadir algo más. \ 
+última vez si el cliente quiere añadir algo más. \
 Si es una entrega, pregunta la dirección. \
 Finalmente cobra el pago.
 Asegúrate de aclarar todas las opciones, extras y tamaños para \

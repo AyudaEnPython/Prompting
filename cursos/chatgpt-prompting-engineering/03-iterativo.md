@@ -195,7 +195,7 @@ plastificado de 5 ruedas y ajuste neumático del sillón,
 esta silla es fácil de ajustar y mover. Disponible en una
 variedad de opciones de color y acabado de base, así como
 con o sin reposabrazos, esta silla es adecuada para cualquier
-necesidad. La carcasa está hecha de fundición de aluminio con 
+necesidad. La carcasa está hecha de fundición de aluminio con
 recubrimiento de nylon PA6/PA66 modificado y el asiento
 está hecho de espuma HD36. Fabricado en Italia.
 ```

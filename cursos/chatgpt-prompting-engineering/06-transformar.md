@@ -70,7 +70,7 @@ Imagina que estás a cargo del departamento de IT en una gran empresa multinacio
 
 ```python
 user_messages = [
-  "La performance du système est plus lente que d'habitude.", 
+  "La performance du système est plus lente que d'habitude.",
   # El rendimiento del sistema es más lento de lo normal
   "My monitor has pixels that are not lighting",
   # Mi monitor tiene píxeles que no se iluminan
@@ -80,7 +80,7 @@ user_messages = [
   # Mi teclado tiene una tecla de control rota
   "我的屏幕在闪烁",
   # Mi pantalla parpadea
-] 
+]
 
 for issue in user_messages:
     prompt = f"Dime que idima es esto: ```{issue}```"
@@ -99,22 +99,22 @@ Output:
 ```
 Mensaje original (Este texto está en francés.): La performance
 du système est plus lente que d'habitude.
-"The system performance is slower than usual." 
+"The system performance is slower than usual."
 
 Mensaje original (Este texto está en inglés.): My monitor has
 pixels that are not lighting
-My monitor has pixels that are not lighting. 
+My monitor has pixels that are not lighting.
 
 Mensaje original (Este texto está en italiano.): Il mio mouse
 non funziona
-My mouse is not working. 
+My mouse is not working.
 
 Mensaje original (Este texto está en polaco. Significa "Mi tecla
 Ctrl está rota".): Mój klawisz Ctrl jest zepsuty
-My Ctrl key is broken. 
+My Ctrl key is broken.
 
 Mensaje original (Este texto está en chino mandarín.): 我的屏幕在闪烁
-"My screen is flickering" 
+"My screen is flickering"
 ```
 
 ## Transformar tono
@@ -132,12 +132,12 @@ print(response)
 
 Output:
 ```
-Estimado/a, 
+Estimado/a,
 
 Me dirijo a usted para presentarle la especificación de una
-lámpara de pie. 
+lámpara de pie.
 
-Atentamente, 
+Atentamente,
 Joe
 ```
 
@@ -146,7 +146,7 @@ Joe
 _ChatGPT_ puede traducir entre formatos. El _prompt_ debe describir los formatos de entrada y salida.
 
 ```python
-data = { "resturant employees" :[ 
+data = { "resturant employees" :[
     {"name":"Shyam", "email":"shyamjaiswal@gmail.com"},
     {"name":"Bob", "email":"bob32@gmail.com"},
     {"name":"Jai", "email":"jai87@gmail.com"}
@@ -227,7 +227,7 @@ Estos son algunos ejemplos de problemas comunes de gramática/ortografía y la r
 Para indicarle al _LLM_ corrija el texto, indicar al modelo que "revise" o "revise y corrija".
 
 ```python
-text = [ 
+text = [
   "La niña con los cachorros blancos y negros tienen una pelota.",
   # La niña tiene una pelota.
   "Yolanda tiene su libreta.",
@@ -240,7 +240,7 @@ text = [
   # ortografía
 ]
 for t in text:
-    prompt = f"""Revisa y corrige el siguiente texto y 
+    prompt = f"""Revisa y corrige el siguiente texto y
     reescribe la versión corregida. Si no encuentras
     ningun error, solo di "No se encontraron errores". No
     uses ninguna puntuación alrededor del texto:

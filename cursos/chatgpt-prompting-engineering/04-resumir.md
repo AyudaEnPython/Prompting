@@ -39,7 +39,7 @@ print(response)
 
 Output:
 ```
-Peluche de panda suave y lindo, pero un poco pequeño 
+Peluche de panda suave y lindo, pero un poco pequeño
 para el precio. Entrega rápida. Ideal para regalar a niños.
 ```
 
@@ -52,8 +52,8 @@ del producto de un sitio de comercio electrónico para
 dar retroalimentación al departamento de envíos.
 
 Resume la reseña a continuación, delimitada por
-triple backticks, en un máximo de 30 palabras, y 
-centrándote en cualquier aspecto que menciona el 
+triple backticks, en un máximo de 30 palabras, y
+centrándote en cualquier aspecto que menciona el
 envío o la entrega del producto.
 
 Reseña: ```{prod_review}```
@@ -125,7 +125,7 @@ haber opciones más grandes por el mismo precio.
 ## Resumir múltiples reseñas de un producto
 
 ```python
-review_1 = prod_review 
+review_1 = prod_review
 
 # reseña para un soporte de lampara
 review_2 = """
@@ -206,7 +206,7 @@ for i, review in enumerate(reviews, 1):
     prompt = f"""
     Tu tarea es generar un breve resumen de la reseña de un \
     producto de un comercio electrónico.
-    
+
     Resume la reseña, delimitada por triple backticks en un \
     máximo de 20 palabras.
 
